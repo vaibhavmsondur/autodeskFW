@@ -3,27 +3,27 @@
 <suite name="Suite" parallel="tests">
 	<test thread-count="5" name="Test1">
 		<classes>
-			<class name="com.crm.autodeskSelenium.contacts.CreateContactTest" />
-			<class name="com.crm.autodeskSelenium.contacts.CreateContactWithOrgAndDateTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.contacts.CreateContactWithOrgAndDateTest" />
 		</classes>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Test2">
 		<classes>
-			<class name="com.crm.autodeskSelenium.product.Create_Product_With_Support_Group_Test" />
-			<class name="com.crm.autodeskSelenium.product.CreateProductTest" />
-			<class name="com.crm.autodeskSelenium.campaign.CreateCampaignWithProductTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.product.Create_Product_With_Support_Group_Test" />
+			<class name="com.crm.autodeskFrameworkSelenium.product.CreateProductTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.campaign.CreateCampaignWithProductTest" />
 		</classes>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Test3">
 		<classes>
-			<class name="com.crm.autodeskSelenium.contacts.CreateContactWithOrgTest" />
-			<class name="com.crm.autodeskSelenium.organization.CreateOrgTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.contacts.CreateContactWithOrgTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest" />
 		</classes>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Test4">
 		<classes>
-			<class name="com.crm.autodeskSelenium.organization.CreateOrgWithIndustryTest" />
-			<class name="com.crm.autodeskSelenium.product.Create_Product_With_MarketingGroup_Test" />
+			<class name="com.crm.autodeskFrameworkSelenium.organization.CreateOrgWithIndustryTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.product.Create_Product_With_MarketingGroup_Test" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

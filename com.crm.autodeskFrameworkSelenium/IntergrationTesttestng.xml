@@ -8,8 +8,8 @@
 	</groups>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.crm.autodeskSelenium.contacts.CreateContactWithOrgTest"/>
-      <class name="com.crm.autodeskSelenium.organization.CreateOrgWithIndustryTest"/>
+      <class name="com.crm.autodeskFrameworkSelenium.contacts.CreateContactWithOrgTest"/>
+      <class name="com.crm.autodeskFrameworkSelenium.organization.CreateOrgWithIndustryTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

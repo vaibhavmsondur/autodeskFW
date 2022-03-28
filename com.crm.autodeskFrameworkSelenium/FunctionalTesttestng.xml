@@ -7,12 +7,12 @@
 		</run>
 	</groups>
 	<listeners>
-		<listener class-name="com.crm.autodeskSelenium.genericUtility.ListenersImplementationClass" />
+		<listener class-name="com.crm.autodeskFrameworkSelenium.genericUtility.ListenersImplementationClass" />
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.crm.autodeskSelenium.contacts.CreateContactTest" />
-			<class name="com.crm.autodeskSelenium.organization.CreateOrgTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

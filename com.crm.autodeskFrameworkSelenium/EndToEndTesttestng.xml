@@ -8,8 +8,8 @@
 	</groups>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.crm.autodeskSelenium.product.Create_Product_With_Support_Group_Test"/>
-      <class name="com.crm.autodeskSelenium.product.Create_Product_With_MarketingGroup_Test"/>
+      <class name="com.crm.autodeskFrameworkSelenium.product.Create_Product_With_Support_Group_Test"/>
+      <class name="com.crm.autodeskFrameworkSelenium.product.Create_Product_With_MarketingGroup_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

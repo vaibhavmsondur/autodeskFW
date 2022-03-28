@@ -13,6 +13,12 @@ public class RetryAnalyzerImplementationClass implements IRetryAnalyzer{
 	public boolean retry(ITestResult result) {	
 		if (count<retryCount) {
 			count++;
+			
+			
+			
+			
+			
+			
 			return true;
 		}
 		return false;

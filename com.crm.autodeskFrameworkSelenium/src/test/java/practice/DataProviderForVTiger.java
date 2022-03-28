@@ -8,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.crm.autodeskSelenium.objectRepository.ContactsPage;
-import com.crm.autodeskSelenium.objectRepository.HomePage;
-import com.crm.autodeskSelenium.objectRepository.LoginPage;
+import com.crm.autodeskFrameworkSelenium.objectRepository.ContactsPage;
+import com.crm.autodeskFrameworkSelenium.objectRepository.HomePage;
+import com.crm.autodeskFrameworkSelenium.objectRepository.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

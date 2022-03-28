@@ -1,6 +1,6 @@
 package practice;
 
-import com.crm.autodeskSelenium.genericUtility.ExcelUtility;
+import com.crm.autodeskFrameworkSelenium.genericUtility.ExcelUtility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

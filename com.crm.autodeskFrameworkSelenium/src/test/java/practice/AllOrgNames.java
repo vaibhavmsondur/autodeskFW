@@ -7,15 +7,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.crm.autodeskSelenium.genericUtility.ExcelUtility;
-import com.crm.autodeskSelenium.genericUtility.FileUtility;
-import com.crm.autodeskSelenium.genericUtility.JavaUtility;
-import com.crm.autodeskSelenium.genericUtility.WebDriverUtility;
-import com.crm.autodeskSelenium.objectRepository.CreateNewOrganizationPage;
-import com.crm.autodeskSelenium.objectRepository.HomePage;
-import com.crm.autodeskSelenium.objectRepository.LoginPage;
-import com.crm.autodeskSelenium.objectRepository.OrganizationInformationPage;
-import com.crm.autodeskSelenium.objectRepository.OrganizationsPage;
+import com.crm.autodeskFrameworkSelenium.genericUtility.ExcelUtility;
+import com.crm.autodeskFrameworkSelenium.genericUtility.FileUtility;
+import com.crm.autodeskFrameworkSelenium.genericUtility.JavaUtility;
+import com.crm.autodeskFrameworkSelenium.genericUtility.WebDriverUtility;
+import com.crm.autodeskFrameworkSelenium.objectRepository.CreateNewOrganizationPage;
+import com.crm.autodeskFrameworkSelenium.objectRepository.HomePage;
+import com.crm.autodeskFrameworkSelenium.objectRepository.LoginPage;
+import com.crm.autodeskFrameworkSelenium.objectRepository.OrganizationInformationPage;
+import com.crm.autodeskFrameworkSelenium.objectRepository.OrganizationsPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 

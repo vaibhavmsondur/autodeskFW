@@ -23,14 +23,21 @@ public class ExcelUtility {
 	 * @return Data
 	 * @throws Throwable
 	 */
-	public String getDataFromExcel(String sheetName, int rowNum, int cellNum) throws Throwable {
-		FileInputStream fis= new FileInputStream(".\\src\\test\\resources\\TestData.xlsx");
-		Workbook wb= WorkbookFactory.create(fis);
-		Sheet sheet = wb.getSheet(sheetName);
-		Row row = sheet.getRow(rowNum);
-		Cell cell = row.getCell(cellNum);
-		String data = cell.getStringCellValue();
-		wb.close();
+	public String getDataFromExcel(String sheetName, int rowNum, int cellNum) {
+		FileInputStream fis;
+		String data=null;
+		try {
+			fis = new FileInputStream(IPathConstants.EXCEL_PATH);
+			Workbook wb= WorkbookFactory.create(fis);
+			Sheet sheet = wb.getSheet(sheetName);
+			Row row = sheet.getRow(rowNum);
+			Cell cell = row.getCell(cellNum);
+			data = cell.getStringCellValue();
+			wb.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return data;
 	}
 	
@@ -40,12 +47,22 @@ public class ExcelUtility {
 	 * @return
 	 * @throws Throwable
 	 */
-	public int getRowCount(String sheetName) throws Throwable {
-		FileInputStream fis= new FileInputStream("./data/testScriptData.xlsx");
+	public int getRowCount(String sheetName) {
+		FileInputStream fis;
+		int row=0;
+		try {
+			fis = new FileInputStream("./data/testScriptData.xlsx");
+		
 		Workbook wb= WorkbookFactory.create(fis);
 		Sheet sheet = wb.getSheet(sheetName);
+		row =sheet.getPhysicalNumberOfRows();
 		wb.close();
-		return sheet.getPhysicalNumberOfRows();
+	
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return row;
 	}
 	/**
 	 * used to get the Number of Cells in the excel sheet

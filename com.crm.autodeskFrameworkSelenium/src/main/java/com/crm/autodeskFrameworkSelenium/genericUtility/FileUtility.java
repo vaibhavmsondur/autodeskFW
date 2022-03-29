@@ -16,11 +16,19 @@ public class FileUtility {
 	 * @return
 	 * @throws Throwable 
 	 */
-	public String getPropertyKeyValue(String key) throws Throwable {
-		FileInputStream fis= new FileInputStream(".\\src\\main\\resources\\commonData\\credentials.properties");
-		Properties prop = new Properties();
-		prop.load(fis);
-		String value=prop.getProperty(key);
+	public String getPropertyKeyValue(String key) {
+		FileInputStream fis;
+		String value=null;
+		try {
+			fis = new FileInputStream(IPathConstants.PROPERTYFILE_PATH);
+			Properties prop = new Properties();
+			prop.load(fis);
+			value=prop.getProperty(key);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return value;
 	}
 }

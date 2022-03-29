@@ -2,7 +2,6 @@ package com.crm.autodeskFrameworkSelenium.genericUtility;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
-import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;

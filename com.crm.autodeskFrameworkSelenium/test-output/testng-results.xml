@@ -1,92 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-29T12:46:54 IST" name="Default suite" finished-at="2022-03-29T12:47:15 IST" duration-ms="20536">
+  <suite started-at="2022-03-29T15:02:12 IST" name="Suite" finished-at="2022-03-29T15:03:08 IST" duration-ms="55932">
     <groups>
       <group name="functionalTest">
-        <method signature="CreateOrgTest.createOrg()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" name="createOrg" class="com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest"/>
+        <method signature="CreateContactTest.createContact()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" name="createContact" class="com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest"/>
+        <method signature="CreateOrgTest.createOrg()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@12aba8be]" name="createOrg" class="com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest"/>
       </group> <!-- functionalTest -->
     </groups>
-    <test started-at="2022-03-29T12:46:54 IST" name="Default test" finished-at="2022-03-29T12:47:15 IST" duration-ms="20536">
+    <test started-at="2022-03-29T15:02:12 IST" name="Test" finished-at="2022-03-29T15:03:08 IST" duration-ms="55932">
       <class name="com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest">
-        <test-method is-config="true" signature="bs()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:46:54 IST" name="bs" finished-at="2022-03-29T12:46:54 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bs -->
-        <test-method is-config="true" signature="bt()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:46:55 IST" name="bt" finished-at="2022-03-29T12:46:55 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bt -->
-        <test-method is-config="true" signature="bc()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:46:55 IST" name="bc" finished-at="2022-03-29T12:47:02 IST" duration-ms="6840" status="PASS">
+        <test-method is-config="true" signature="bc()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@12aba8be]" started-at="2022-03-29T15:02:41 IST" name="bc" finished-at="2022-03-29T15:02:46 IST" duration-ms="5101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bc -->
-        <test-method is-config="true" signature="bm()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:47:02 IST" name="bm" finished-at="2022-03-29T12:47:05 IST" duration-ms="3528" status="PASS">
+        <test-method is-config="true" signature="bm()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@12aba8be]" started-at="2022-03-29T15:02:46 IST" name="bm" finished-at="2022-03-29T15:02:50 IST" duration-ms="3637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bm -->
-        <test-method signature="createOrg()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:47:05 IST" name="createOrg" finished-at="2022-03-29T12:47:13 IST" duration-ms="7332" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest.createOrg(CreateOrgTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="createOrg()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@12aba8be]" started-at="2022-03-29T15:02:50 IST" name="createOrg" finished-at="2022-03-29T15:03:05 IST" duration-ms="15260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrg -->
-        <test-method is-config="true" signature="am()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:47:13 IST" name="am" finished-at="2022-03-29T12:47:14 IST" duration-ms="1690" status="PASS">
+        <test-method is-config="true" signature="am()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@12aba8be]" started-at="2022-03-29T15:03:05 IST" name="am" finished-at="2022-03-29T15:03:07 IST" duration-ms="1836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- am -->
-        <test-method is-config="true" signature="ac()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:47:14 IST" name="ac" finished-at="2022-03-29T12:47:15 IST" duration-ms="350" status="PASS">
+        <test-method is-config="true" signature="ac()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@12aba8be]" started-at="2022-03-29T15:03:07 IST" name="ac" finished-at="2022-03-29T15:03:08 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ac -->
-        <test-method is-config="true" signature="at()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:47:15 IST" name="at" finished-at="2022-03-29T12:47:15 IST" duration-ms="1" status="PASS">
+      </class> <!-- com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest -->
+      <class name="com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest">
+        <test-method is-config="true" signature="bs()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:02:12 IST" name="bs" finished-at="2022-03-29T15:02:12 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bs -->
+        <test-method is-config="true" signature="bt()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:02:12 IST" name="bt" finished-at="2022-03-29T15:02:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method is-config="true" signature="bc()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:02:12 IST" name="bc" finished-at="2022-03-29T15:02:20 IST" duration-ms="7933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bc -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:02:20 IST" name="bm" finished-at="2022-03-29T15:02:24 IST" duration-ms="3497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method signature="createContact()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:02:24 IST" name="createContact" finished-at="2022-03-29T15:02:39 IST" duration-ms="15143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="am()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:02:39 IST" name="am" finished-at="2022-03-29T15:02:41 IST" duration-ms="2360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="ac()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:02:41 IST" name="ac" finished-at="2022-03-29T15:02:41 IST" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ac -->
+        <test-method is-config="true" signature="at()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:03:08 IST" name="at" finished-at="2022-03-29T15:03:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- at -->
-        <test-method is-config="true" signature="as()[pri:0, instance:com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest@3ee37e5a]" started-at="2022-03-29T12:47:15 IST" name="as" finished-at="2022-03-29T12:47:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="as()[pri:0, instance:com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest@66f57048]" started-at="2022-03-29T15:03:08 IST" name="as" finished-at="2022-03-29T15:03:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- as -->
-      </class> <!-- com.crm.autodeskFrameworkSelenium.organization.CreateOrgTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.crm.autodeskFrameworkSelenium.contacts.CreateContactTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

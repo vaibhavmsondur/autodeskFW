@@ -30,7 +30,7 @@ public class WebDriverUtility {
 	 * @param driver
 	 */
 	public void waitForPageToLoad(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(IPathConstants.ITO, TimeUnit.SECONDS);
 	}
 	
 	/**
@@ -38,7 +38,7 @@ public class WebDriverUtility {
 	 * @param driver
 	 */
 	public void waitForPageToLoadForJSElement(WebDriver driver) {
-		driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(IPathConstants.ITO, TimeUnit.SECONDS);
 	}
 	
 	/**
@@ -47,7 +47,7 @@ public class WebDriverUtility {
 	 * @param element
 	 */
 	public void waitForElementToBeClickAble(WebDriver driver, WebElement element) {
-		WebDriverWait wait= new WebDriverWait(driver, 20);
+		WebDriverWait wait= new WebDriverWait(driver, IPathConstants.ETO);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
@@ -57,7 +57,7 @@ public class WebDriverUtility {
 	 * @param element
 	 */
 	public void waitForElementToBeVisible(WebDriver driver, WebElement element) {
-		WebDriverWait wait= new WebDriverWait(driver, 20);
+		WebDriverWait wait= new WebDriverWait(driver, IPathConstants.ETO);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
@@ -71,7 +71,7 @@ public class WebDriverUtility {
 	public void waitForElementWithCustomTimeOut(WebDriver driver, WebElement element, int pollingTime) throws Throwable {
 		FluentWait wait = new FluentWait(driver);
 		wait.pollingEvery(pollingTime, TimeUnit.SECONDS);
-		wait.wait(20);
+		wait.wait(IPathConstants.ETO);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	

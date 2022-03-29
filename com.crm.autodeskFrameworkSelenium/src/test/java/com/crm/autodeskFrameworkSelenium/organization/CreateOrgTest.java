@@ -24,7 +24,7 @@ public class CreateOrgTest extends BaseClass {
 			// click on Organization Link
 			HomePage hp = new HomePage(driver);
 			hp.clickOnOrganizations();
-			
+
 			// create organization and save it
 			OrganizationsPage op = new OrganizationsPage(driver);
 			op.clickOnAddIconImage();

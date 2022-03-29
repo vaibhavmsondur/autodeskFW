@@ -3,13 +3,16 @@
 <suite name="Suite">
 	<groups>
 		<run>
-			<include name="intergrationTest"/>
+			<include name="intergrationTest" />
 		</run>
 	</groups>
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.crm.autodeskFrameworkSelenium.contacts.CreateContactWithOrgTest"/>
-      <class name="com.crm.autodeskFrameworkSelenium.organization.CreateOrgWithIndustryTest"/>
-    </classes>
-  </test> <!-- Test -->
+	<listeners>
+		<listener class-name="com.crm.autodeskFrameworkSelenium.genericUtility.ListenersImplementationClass" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.crm.autodeskFrameworkSelenium.contacts.CreateContactWithOrgTest" />
+			<class name="com.crm.autodeskFrameworkSelenium.organization.CreateOrgWithIndustryTest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

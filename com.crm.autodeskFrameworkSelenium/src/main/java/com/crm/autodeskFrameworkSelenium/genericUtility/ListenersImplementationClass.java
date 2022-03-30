@@ -17,12 +17,12 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
  */
 public class ListenersImplementationClass implements ITestListener{
 
-	ExtentReports html;
+	ExtentReports report;
 	ExtentTest test;
 	
 	public void onTestStart(ITestResult result) {
 		//Step 3
-		test = html.createTest(result.getMethod().getMethodName());
+		test = report.createTest(result.getMethod().getMethodName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -61,15 +61,15 @@ public class ListenersImplementationClass implements ITestListener{
 		htmlReport.config().setDocumentTitle("Vtiger Report");
 		
 		//Step 2: Configuration
-		html = new ExtentReports();
-		html.attachReporter(htmlReport);
-		html.setSystemInfo("OS", "Windows 10");
-		html.setSystemInfo("Environment", "Testing Environment");
-		html.setSystemInfo("Url", "http://localhost:8888");
-		html.setSystemInfo("Reporter Name", "Vaibhav");
+		report = new ExtentReports();
+		report.attachReporter(htmlReport);
+		report.setSystemInfo("OS", "Windows 10");
+		report.setSystemInfo("Environment", "Testing Environment");
+		report.setSystemInfo("Url", "http://localhost:8888");
+		report.setSystemInfo("Reporter Name", "Vaibhav");
 	}
 
 	public void onFinish(ITestContext context) {
-		html.flush();
+		report.flush();
 	}
 }
